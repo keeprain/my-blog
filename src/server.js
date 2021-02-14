@@ -99,7 +99,7 @@ app.post('/api/articles/:name/delete-comments', (req, res) => {
 });
 
 app.get('*', (res, req) => {
-    res.sendFile(path.join(__dirname + '/build/index.html'));
+    res.sendfile(path.join(__dirname + '/build/index.html'));
 });
 
 app.listen(8000, () => console.log('Listen on port 8000'));
